@@ -26,6 +26,7 @@ export async function POST(req) {
   try {
     const { message } = await req.json()
 
+    // Verify that the Google Gemini API key is defined in Environment Variables
     if (!process.env.GEMINI_API_KEY) {
       return Response.json({
         reply: "I am having trouble connecting to my brain right now. Please add the GEMINI_API_KEY to your Vercel project environment variables!"
