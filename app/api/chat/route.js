@@ -1,4 +1,4 @@
-import Anthropic from '@anthropic-ai/sdk'
+import { GoogleGenAI } from '@google/genai'
 import profile from '@/data/profile.json'
 import projects from '@/data/projects.json'
 import certs from '@/data/certifications.json'
@@ -26,28 +26,29 @@ export async function POST(req) {
   try {
     const { message } = await req.json()
 
-    if (!process.env.ANTHROPIC_API_KEY) {
+    if (!process.env.GEMINI_API_KEY) {
       return Response.json({
-        reply: "I am having trouble connecting to my brain right now. Please add the ANTHROPIC_API_KEY to your Vercel project environment variables!"
+        reply: "I am having trouble connecting to my brain right now. Please add the GEMINI_API_KEY to your Vercel project environment variables!"
       })
     }
 
-    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY })
 
-    const response = await client.messages.create({
-      model: 'claude-3-5-sonnet-latest',
-      max_tokens: 400,
-      system: buildContext(),
-      messages: [{ role: 'user', content: message }]
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: message,
+      config: {
+        systemInstruction: buildContext(),
+      }
     })
 
     return Response.json({
-      reply: response.content[0].text
+      reply: response.text
     })
   } catch (error) {
-    console.error("Anthropic Chat API Error:", error);
+    console.error("Gemini Chat API Error:", error);
     return Response.json({
-      reply: "I am having trouble connecting to my brain right now. Please check if the Anthropic API key is properly configured!"
+      reply: "I am having trouble connecting to my brain right now. Please check if the Gemini API key is properly configured!"
     }, { status: 500 });
   }
 }
