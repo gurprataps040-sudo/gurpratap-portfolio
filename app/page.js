@@ -35,16 +35,34 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen max-w-6xl mx-auto px-6 py-12 lg:py-24">
-      {/* Outer Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-        
-        {/* LEFT COLUMN: HERO NAME, TAGLINE, NAV, METADATA (Sticky) */}
-        <aside className="lg:col-span-5 flex flex-col justify-between lg:h-[calc(100vh-12rem)] lg:sticky lg:top-24">
-          <Hero profile={profile} navItems={navItems} />
+    <div className="min-h-screen max-w-6xl mx-auto py-12 lg:py-24 space-y-12 lg:space-y-16">
+      {/* Hero Section: Full width at the top */}
+      <Hero />
 
-          {/* Socials & Meta Info at bottom */}
-          <div className="mt-12 lg:mt-0 pt-8 lg:pt-0 border-t border-rule lg:border-t-0 flex flex-col gap-4">
+      {/* Grid Section for the rest of the page */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 border-t border-[var(--rule)] pt-16">
+        
+        {/* LEFT COLUMN: Nav and Socials (Sticky on desktop) */}
+        <aside className="lg:col-span-4 flex flex-col justify-between lg:h-[320px] lg:sticky lg:top-24 px-8 md:px-16">
+          <div>
+            <h2 className="font-mono text-xs uppercase tracking-widest text-[var(--muted)] mb-6">Index</h2>
+            <nav className="hidden lg:block">
+              <ul className="space-y-4">
+                {navItems.map((item, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={item.id}
+                      className="font-mono text-xs text-muted hover:text-accent transition-colors duration-200 uppercase tracking-wider block"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+          
+          <div className="mt-8 pt-8 border-t border-rule lg:border-t-0 flex flex-col gap-4">
             <div className="flex gap-6 font-mono text-xs">
               {profile.github && (
                 <a href={profile.github} className="text-muted hover:text-accent transition-colors duration-200" target="_blank" rel="noreferrer">GITHUB</a>
@@ -55,23 +73,46 @@ export default function Home() {
               <a href={`mailto:${profile.email}`} className="text-muted hover:text-accent transition-colors duration-200">EMAIL</a>
             </div>
             <div className="text-[10px] font-mono text-muted uppercase tracking-wider">
-              © {new Date().getFullYear()} {profile.name.first} {profile.name.last}. ALL RIGHTS RESERVED.
+              © {new Date().getFullYear()} {profile.name.first} {profile.name.last}.
             </div>
           </div>
         </aside>
 
         {/* RIGHT COLUMN: MAIN CONTENT */}
-        <main className="lg:col-span-7 space-y-20 lg:space-y-32">
-          <About profile={profile} />
-          <Projects projects={projects} />
-          <Skills skills={skills} />
-          <Education education={education} />
-          <Certifications certifications={certifications} />
-          <Achievements achievements={achievements} />
-          <Hobbies hobbies={hobbies} />
-          <QA qa={qa} />
-          <Contact profile={profile} />
-          <Footer />
+        <main className="lg:col-span-8 space-y-16 lg:space-y-24">
+          <div className="px-8 md:px-16">
+            <About profile={profile} />
+          </div>
+          
+          <Projects />
+          
+          <div className="px-8 md:px-16">
+            <Skills skills={skills} />
+          </div>
+          
+          <div className="px-8 md:px-16">
+            <Education education={education} />
+          </div>
+          
+          <Certifications />
+          
+          <div className="px-8 md:px-16">
+            <Achievements achievements={achievements} />
+          </div>
+          
+          <Hobbies />
+          
+          <div className="px-8 md:px-16">
+            <QA qa={qa} />
+          </div>
+          
+          <div className="px-8 md:px-16">
+            <Contact profile={profile} />
+          </div>
+          
+          <div className="px-8 md:px-16">
+            <Footer />
+          </div>
         </main>
       </div>
       <ChatWidget />
