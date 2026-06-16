@@ -3,7 +3,7 @@ import projects from '@/data/projects.json'
 
 export default function Projects() {
   return (
-    <section className="px-8 md:px-16 py-20">
+    <section id="projects-experience" className="scroll-mt-24 px-8 md:px-16 py-20">
       <p className="text-xs tracking-[0.15em] uppercase
         text-[var(--muted)] mb-12">Work & Projects</p>
 

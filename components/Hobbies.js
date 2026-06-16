@@ -7,7 +7,7 @@ export default function Hobbies() {
     { label: "I watch tech", sub: "talks & docs", emoji_alt:"Watch" },
   ]
   return (
-    <section className="px-8 md:px-16 py-20">
+    <section id="personality" className="scroll-mt-24 px-8 md:px-16 py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {items.map((item, i) => (
           <div key={i} className="border-t border-[var(--rule)] py-10

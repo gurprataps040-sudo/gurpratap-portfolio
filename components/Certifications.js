@@ -5,7 +5,7 @@ export default function Certifications() {
   // Sort newest first
   const sorted = [...certs].reverse()
   return (
-    <section className="px-8 md:px-16 py-20">
+    <section id="certifications" className="scroll-mt-24 px-8 md:px-16 py-20">
       <p className="text-xs tracking-[0.15em] uppercase
         text-[var(--muted)] mb-12">Certifications</p>
 
