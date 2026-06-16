@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --ink:       #1C1F26;
-  --parchment: #F6F5F1;
-  --accent:    #0F6E56;
-  --accent-lt: #E1F5EE;
-  --muted:     #888780;
-  --rule:      #EDEDEB;
+  --ink:       #2E251F;        /* Deep charcoal brown */
+  --parchment: #EADAB1;        /* Dusky yellow autumn background */
+  --accent:    #9C7A59;        /* Light brown for GS logo and accents */
+  --accent-lt: #F3EBD6;        /* Soft autumn cream tint */
+  --muted:     #8A7D70;        /* Muted warm brown-gray */
+  --rule:      #D5C6A9;        /* Warm rule line separator */
 }
 
-body {
+html, body {
   color: var(--ink);
   background-color: var(--parchment);
   font-family: var(--font-body), sans-serif;

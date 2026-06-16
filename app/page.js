@@ -43,8 +43,14 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 border-t border-[var(--rule)] pt-16">
         
         {/* LEFT COLUMN: Nav and Socials (Sticky on desktop) */}
-        <aside className="lg:col-span-4 flex flex-col justify-between lg:h-[320px] lg:sticky lg:top-24 px-8 md:px-16">
+        <aside className="lg:col-span-4 flex flex-col justify-between lg:h-[380px] lg:sticky lg:top-24 px-8 md:px-16">
           <div>
+            {/* GS Logo in Light Brown */}
+            <div className="mb-8">
+              <a href="#" className="w-12 h-12 rounded-full border-2 border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--parchment)] transition-all duration-300 flex items-center justify-center font-display text-sm font-bold text-[var(--accent)] select-none cursor-pointer decoration-none">
+                GS
+              </a>
+            </div>
             <h2 className="font-mono text-xs uppercase tracking-widest text-[var(--muted)] mb-6">Index</h2>
             <nav className="hidden lg:block">
               <ul className="space-y-4">

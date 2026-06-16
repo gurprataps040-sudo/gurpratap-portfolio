@@ -41,7 +41,7 @@ export default function ChatWidget() {
       {/* Chat window */}
       {open && (
         <div className="absolute bottom-16 right-0 w-72
-          bg-white border border-[var(--rule)] rounded-2xl
+          bg-[var(--accent-lt)] border border-[var(--rule)] rounded-2xl
           overflow-hidden shadow-xl">
           <div className="p-3 border-b border-[var(--rule)]
             text-xs font-medium tracking-wider uppercase
