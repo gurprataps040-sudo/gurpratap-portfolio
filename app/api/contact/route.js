@@ -9,7 +9,7 @@ export async function POST(req) {
       )
     }
 
-    // Send email via Resend (rebuilt to reload Vercel environment variables)
+    // Send email via Resend (rebuilt to apply saved RESEND_API_KEY)
     const { Resend } = require('resend')
     const resend = new Resend(process.env.RESEND_API_KEY)
 
