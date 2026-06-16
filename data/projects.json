@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Prompt Building Project",
+    "org": "LYNQUP PRIVATE LIMITED (under ASTITWA)",
+    "date": "Feb 2026",
+    "description": "Developed and structured effective prompts for AI tools to generate accurate and relevant outputs. Gained hands-on experience in prompt design, testing, and optimization. Improved understanding of AI interaction and response refinement.",
+    "tech": ["Prompt Engineering", "AI Tools"],
+    "type": "work",
+    "links": { "live": "", "github": "" }
+  },
+  {
+    "id": 2,
+    "title": "LPU ARENA Website",
+    "org": "Lovely Professional University",
+    "date": "Feb 2026",
+    "description": "Built a basic website using HTML, CSS, and JavaScript. Designed user-friendly layouts and structured web pages. Learned fundamentals of front-end development and responsive design.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "type": "project",
+    "links": { "live": "", "github": "" }
+  }
+]

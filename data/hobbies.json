@@ -1,0 +1,33 @@
+{
+  "languages": [
+    { "name": "English", "fluency": "Fluent" },
+    { "name": "Hindi", "fluency": "Fluent" },
+    { "name": "Punjabi", "fluency": "Basic" }
+  ],
+  "interests": [
+    {
+      "name": "Cricket & Football",
+      "description": "Sports analytics is my second language. Whether it is staying up late for a Test match or analyzing Premier League tactical formations, I enjoy combining my love for data with the unpredictability of sports."
+    },
+    {
+      "name": "Sci-Fi & Speculative Fiction",
+      "description": "I find deep inspiration in speculative futures. Authors like Ted Chiang, Cixin Liu, and Isaac Asimov push me to think about the long-term ethical implications of the AI systems we are building today."
+    },
+    {
+      "name": "Coffee Rituals",
+      "description": "Precision brewing fuels my coding sessions. I treat my espresso pulls and pour-overs with mathematical accuracy—weighing beans to the tenth of a gram, calculating ratios, and timing extractions."
+    },
+    {
+      "name": "Acoustic Guitar",
+      "description": "When the screens get too bright and compiling takes too long, I unplug and play fingerstyle arrangements of classic rock, folk, and ambient tunes to reset my creative energy."
+    },
+    {
+      "name": "Creative Role-Play Designing",
+      "description": "Designing interactive scenarios and worldbuilding narrative threads to explore choices and outcomes."
+    },
+    {
+      "name": "Web Browsing & Exploring Tech",
+      "description": "Always scanning the web, documentation pages, and GitHub repositories for new tools, frameworks, and AI advancements."
+    }
+  ]
+}

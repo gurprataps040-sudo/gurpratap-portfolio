@@ -1,0 +1,13 @@
+[
+  { "category": "Technical", "name": "Python", "level": "Advanced" },
+  { "category": "Technical", "name": "Java", "level": "Intermediate" },
+  { "category": "Technical", "name": "HTML / CSS", "level": "Intermediate" },
+  { "category": "Technical", "name": "JavaScript", "level": "Intermediate" },
+  { "category": "Technical", "name": "DBMS (MySQL, PostgreSQL)", "level": "Intermediate" },
+  { "category": "Technical", "name": "Git / GitHub", "level": "Intermediate" },
+  { "category": "Soft", "name": "Critical Thinking", "level": "Advanced" },
+  { "category": "Soft", "name": "Problem Solving", "level": "Advanced" },
+  { "category": "Soft", "name": "Communication Skills", "level": "Advanced" },
+  { "category": "Soft", "name": "Leadership Skills", "level": "Intermediate" },
+  { "category": "Soft", "name": "Positive Attitude", "level": "Advanced" }
+]

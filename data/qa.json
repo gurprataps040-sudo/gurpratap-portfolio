@@ -1,0 +1,22 @@
+[
+  {
+    "q": "Why did you choose Computer Science and AI?",
+    "a": "I am fascinated by systems that simulate reasoning. Computer Science gives us the building blocks, while Machine Learning provides a way to learn from complex data patterns. Creating systems that learn rather than follow hardcoded rules feels like the closest thing to magic."
+  },
+  {
+    "q": "What is your primary tech stack?",
+    "a": "For building complete applications, I enjoy using Next.js with TypeScript and Tailwind CSS. For model development, fine-tuning, and research, I live in Python, PyTorch, and the Hugging Face ecosystem. When I need high-concurrency backend services, I write Go."
+  },
+  {
+    "q": "Tell us about your sports analytics obsession.",
+    "a": "Cricket and football aren't just games to me; they're data goldmines. I analyze cricket match strategies (like batting matchups and death overs efficiency) and Premier League formation stats. Data adds another layer of drama to the live broadcast."
+  },
+  {
+    "q": "What AI topics are you currently learning?",
+    "a": "I am deeply diving into Mechanistic Interpretability. LLMs are black boxes, and I want to help open them. Understanding what individual directions in the activation space mean is crucial for AI safety and alignment."
+  },
+  {
+    "q": "What are your goals for the future?",
+    "a": "To bridge the gap between complex research and robust software engineering. I want to build tools that make advanced machine learning understandable, transparent, and easy to deploy for creators worldwide."
+  }
+]

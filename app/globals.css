@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink:       #1C1F26;
+  --parchment: #F6F5F1;
+  --accent:    #0F6E56;
+  --accent-lt: #E1F5EE;
+  --muted:     #888780;
+  --rule:      #EDEDEB;
+}
+
+body {
+  color: var(--ink);
+  background-color: var(--parchment);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar matching the minimal theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rule);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
